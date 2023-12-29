@@ -1,0 +1,91 @@
+{% extends "layout2.html" %}
+{% block title %}Member{% endblock %}
+
+{% block page_content %}
+<link href="{{ url_for('static', filename = 'css/magic_nav.css') }}" rel="stylesheet">
+
+<main style="overflow:hidden;background-color: #e0ebeb;">
+    <!--Magic-navbar-->
+    <div class="myScrollspy">
+        <div class="left-bar">
+            <div class="left-bar-right">
+                <div class="left-bar-right-item">
+                    <a href="#section1" class="sidebar-link" data-section="section1">Common Experiment</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section2" class="sidebar-link" data-section="section2">Anti-icing Group</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section3" class="sidebar-link" data-section="section3">Solutions of soil
+                        drought</a>
+                </div>
+            </div>
+        </div>
+        <div class="left-bar-bg">
+            <img src="https://static.igem.wiki/teams/4907/wiki/background/sidebar1.png" alt="">
+        </div>
+        <!-- <div class="scroll-bar"></div> -->
+    </div>
+    <!--content-->
+    <div style="width: 75vw;left: 17vw;background-color: rgba(222, 169, 222, 0.5);position: relative;box-shadow: rgba(0, 0, 0, 0.5)">
+        <div style="height: 100px;"></div>
+        <div style="height: 100vh;font-size: 5vh;font-weight: 400;" id="section1">
+            真正的平静，不是避开车马喧嚣，<br />
+            而是在心中修篱种菊。<br />
+            尽管如流往事，每一天都涛声依旧，<br />
+            只要我们消除执念，便可寂静安然。<br />
+            愿每个人，在纷呈世相中不会迷失荒径，<br />
+            可以端坐磐石上，醉倒落花前。<br />
+        </div>
+        <div style="height: 100vh;font-size: 5vh;font-weight: 400;" id="section2">
+            真正的平静，不是避开车马喧嚣，<br />
+            而是在心中修篱种菊。<br />
+            尽管如流往事，每一天都涛声依旧，<br />
+            只要我们消除执念，便可寂静安然。<br />
+            愿每个人，在纷呈世相中不会迷失荒径，<br />
+            可以端坐磐石上，醉倒落花前。<br />
+        </div>
+        <div style="height: 100vh;font-size: 5vh;font-weight: 400;" id="section3">
+            真正的平静，不是避开车马喧嚣，<br />
+            而是在心中修篱种菊。<br />
+            尽管如流往事，每一天都涛声依旧，<br />
+            只要我们消除执念，便可寂静安然。<br />
+            愿每个人，在纷呈世相中不会迷失荒径，<br />
+            可以端坐磐石上，醉倒落花前。<br />
+        </div>
+    </div>
+</main>
+
+<script>
+//up键开始
+var backTop = document.querySelector(".toTop");
+
+backTop.addEventListener("click", function () {
+    window.scrollTo({top: -100, left: 0, behavior: 'smooth'})
+})
+//up键结束
+</script>
+<script>
+    //侧边导航栏js开始
+    document.write('<script src="//' + (location.host || 'localhost').split(':')[0] +
+        ':35929/livereload.js?snipver=1"></' + 'script>')
+</script>
+<script>
+    document.addEventListener('LiveReloadDisconnect', function() {
+        setTimeout(function() {
+            window.location.reload();
+        }, 500);
+    })
+</script>
+<script>
+    $(function() {
+        $("[data-toggle='popover']").popover({
+            animation: true,
+            html: true, //content中插入html代码
+            container: "body",
+            content: "<img src='https://static.igem.wiki/teams/4907/wiki/footer-icon/qrcode.jpg'>", //插入图片的路径 及 样式
+        });
+    });
+    //侧边导航栏js结束
+</script>
+{% endblock %}

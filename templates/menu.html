@@ -1,0 +1,75 @@
+<nav class="navigation">
+    <div class="logo">
+        <div class="log-icon">
+            <a href="test2.html">
+                <img src="{{ url_for('static', filename='img/DeerGirl.jpg') }}" style="margin-top: 0.6vw; height: 90%;" />
+            </a>
+        </div>
+        <div class="log-name" id="sika">
+            <a href="#">
+                <div class="logo-font" style="background-image: url({{url_for('static',filename='img/sika.png')}});"></div>
+            </a>
+        </div>
+    </div>
+    <div class="nav-items" style="margin-top: 1.8vh;">
+        <ul class="nav-frame">
+            <li>
+                <a href="{{ url_for('index') }}">
+                    <img src="{{url_for('static',filename='img/Home.png')}}" style="height: 70%;" />
+                    <p style="margin-top: 3%;color: white">HOME</p>
+                </a>
+            </li>
+            <div class="nav1">
+                <img src="{{url_for('static',filename='img/Team.png')}}" style="height: 70%;" />
+                <p style="margin-top: 3%;color: white">TEAM</p>
+                <div class="nav2">
+                    <p style="line-height: 3vh;"><a href="{{ url_for('pages', page='member') }}">Members</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Attributions</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Notebook</a></p>
+                    <p style="line-height: 3vh;"><a href="{{ url_for('pages', page='experiment') }}">Experiments</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Safty</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Collaborations</a></p>
+                </div>
+            </div>
+            <div class="nav1">
+                <img src="{{url_for('static',filename='img/Project.png')}}" style="height: 70%;" />
+                <p style="margin-top: 3%;color: white">PROJECT</p>
+                <div class="nav2">
+                    <p style="line-height: 3vh;"><a href="#">Description</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Design</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Engineering Success</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Results</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Proof of Concept</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Proposed Implementation</a></p>
+                </div>
+            </div>
+            <div class="nav1">
+                <img src="{{url_for('static',filename='img/Lab.png')}}" style="height: 70%;" />
+                <p style="margin-top: 3%;color: white">LAB</p>
+                <div class="nav2">
+                    <p style="line-height: 3vh;"><a href="#">Hardware</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Software</a></p>
+                </div>
+            </div>
+            <div class="nav1">
+                <img src="{{url_for('static',filename='img/HP.png')}}" style="height: 70%;" />
+                <p style="margin-top: 3%;color: white">HP</p>
+                <div class="nav2">
+                    <p style="line-height: 3vh;"><a href="#">Human Practices</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Integrated Human Practices</a></p>
+                </div>
+            </div>
+            <div class="nav1">
+                <img src="{{url_for('static',filename='img/Award.png')}}" style="height: 70%;" />
+                <p style="margin-top: 3%;color: white">AWARDS</p>
+                <div class="nav2">
+                    <p style="line-height: 3vh;"><a href="#">Awards</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Best New Basic Part</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Engineering Success</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Best Hardware</a></p>
+                    <p style="line-height: 3vh;"><a href="#">Best Integrated Human Practice</a></p>
+                </div>
+            </div>
+        </ul>
+    </div>
+</nav>
